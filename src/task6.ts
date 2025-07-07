@@ -1,14 +1,14 @@
 interface Users {
-  readonly id: number | string;
+  readonly id?: number | string;
   name: string;
-  role: string;
+  role?: string;
   email?: string;
 }
 
 function greeting(user: Users): string {
-  return `Greetings, \n${user.id} - ${user.name}!\n${user.role}\n${
+  return `Greetings, \n${user.id ?? ""} ${user.name}!\n${user.role ?? ""}\n${
     user.email ?? ""
   }`;
 }
 
-console.log(greeting({ id: 454, name: "Jero", role: "Level 1 Engineer" }));
+console.log(greeting({ name: "Jero" }));
