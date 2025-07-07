@@ -1,3 +1,4 @@
+"use strict";
 var userRole;
 (function (userRole) {
     userRole["Admin"] = "ADMIN";
@@ -15,5 +16,5 @@ function isAccessed(x) {
         return "Access Denied!";
     }
 }
-var currentRole = userRole.Admin;
+const currentRole = userRole.Admin;
 console.log(isAccessed(checkAccess(currentRole)));

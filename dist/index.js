@@ -1,4 +1,5 @@
-var fullName = "Jerald Abishek V";
+"use strict";
+const fullName = "Jerald Abishek V";
 function getName(x) {
     return x;
 }

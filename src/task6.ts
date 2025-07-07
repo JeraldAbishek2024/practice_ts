@@ -1,12 +1,12 @@
 interface Users {
-  readonly id: number;
+  readonly id: number | string;
   name: string;
   role: string;
   email?: string;
 }
 
 function greeting(user: Users): string {
-  return `Greetings, ${user.id} - ${user.name}!\n${user.role}\n${
+  return `Greetings, \n${user.id} - ${user.name}!\n${user.role}\n${
     user.email ?? ""
   }`;
 }

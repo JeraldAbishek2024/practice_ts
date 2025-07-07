@@ -1,4 +1,4 @@
-let fullName: string = "Jerald Abishek V";
+const fullName: string = "Jerald Abishek V";
 
 function getName(x: string): string {
   return x;

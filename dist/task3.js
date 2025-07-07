@@ -1,7 +1,8 @@
+"use strict";
 function greet(x) {
-    return "Welcome ".concat(x, "!");
+    return `Welcome ${x}!`;
 }
-var y = 1;
+let y = 1;
 console.log(greet("Jero"));
 console.log("Implicit");
 console.log(typeof y);
